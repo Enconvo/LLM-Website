@@ -1,0 +1,71 @@
+{
+  "$schema": "https://enconvo.com/schemas/extension.json",
+  "name": "llm_website",
+  "version": "0.0.1",
+  "description": "Top LLM Provider's Website",
+  "title": "LLM Website",
+  "icon": "icon.png",
+  "author": "EnconvoAI",
+  "categories": [
+    "Chat"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "commands": [
+    {
+      "name": "chatgpt",
+      "icon": "chatgpt.png",
+      "title": "ChatGPT Website",
+      "description": "ChatGPT is a large language model developed by OpenAI.",
+      "mode": "webview",
+      "commandType": "website",
+      "preferences": [
+        {
+          "name": "url",
+          "description": "The URL of the webpage",
+          "type": "text",
+          "title": "URL",
+          "default": "https://chatgpt.com/?q={{input_text}}"
+        }
+      ]
+    },
+    {
+      "name": "chatgpt_search",
+      "icon": "chatgpt.png",
+      "title": "ChatGPT Search Website",
+      "description": "ChatGPT is a large language model developed by OpenAI.",
+      "mode": "webview",
+      "commandType": "website",
+      "preferences": [
+        {
+          "name": "url",
+          "description": "The URL of the webpage",
+          "type": "text",
+          "title": "URL",
+          "default": "https://chatgpt.com/?hints=search&q={{input_text}}"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@enconvo/api": "^0.1.9",
+    "@langchain/core": "^0.1.52"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.14",
+    "@types/react": "18.2.27",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "npm run lint --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --list-different \"**/*.ts\"",
+    "build": "enconvo",
+    "dev": "enconvo --dev",
+    "publish": "enconvo --publish"
+  }
+}
