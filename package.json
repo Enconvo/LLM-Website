@@ -17,15 +17,23 @@
       "icon": "chatgpt.png",
       "title": "ChatGPT Website",
       "description": "ChatGPT is a large language model developed by OpenAI.",
-      "mode": "webview",
+      "mode": "view",
       "commandType": "website",
+      "taskRuntimeType": "webview",
       "preferences": [
         {
           "name": "url",
           "description": "The URL of the webpage",
-          "type": "text",
+          "type": "textfield",
           "title": "URL",
           "default": "https://chatgpt.com/?q={{input_text}}"
+        },
+        {
+          "name": "window_size",
+          "description": "The size of the webpage",
+          "type": "textfield",
+          "title": "Window Size",
+          "default": "1000x700"
         }
       ]
     },
@@ -34,15 +42,48 @@
       "icon": "chatgpt.png",
       "title": "ChatGPT Search Website",
       "description": "ChatGPT is a large language model developed by OpenAI.",
-      "mode": "webview",
+      "mode": "view",
       "commandType": "website",
+      "taskRuntimeType": "webview",
       "preferences": [
         {
           "name": "url",
           "description": "The URL of the webpage",
-          "type": "text",
+          "type": "textfield",
           "title": "URL",
           "default": "https://chatgpt.com/?hints=search&q={{input_text}}"
+        },
+        {
+          "name": "window_size",
+          "description": "The size of the webpage",
+          "type": "textfield",
+          "title": "Window Size",
+          "default": "1000x700"
+        }
+      ]
+    }, 
+    {
+      "name": "claude",
+      "icon": "claude.png",
+      "title": "Claude Website",
+      "description": "Claude is a large language model developed by Anthropic.",
+      "mode": "view",
+      "commandType": "website",
+      "taskRuntimeType": "webview",
+      "preferences": [
+        {
+          "name": "url",
+          "description": "The URL of the webpage",
+          "type": "textfield",
+          "title": "URL",
+          "default": "https://claude.ai/new"
+        },
+        {
+          "name": "window_size",
+          "description": "The size of the webpage",
+          "type": "textfield",
+          "title": "Window Size",
+          "default": "1000x700"
         }
       ]
     }
