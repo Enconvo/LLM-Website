@@ -1,7 +1,7 @@
 {
   "$schema": "https://enconvo.com/schemas/extension.json",
   "name": "llm_website",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Top LLM Provider's Website",
   "title": "LLM Website",
   "icon": "icon.png",
@@ -36,7 +36,7 @@
           "default": "1000x700"
         }
       ]
-    },
+    },  
     {
       "name": "chatgpt_search",
       "icon": "chatgpt.png",
@@ -89,7 +89,7 @@
     }
   ],
   "dependencies": {
-    "@enconvo/api": "^0.1.161"
+    "@enconvo/api": "link:/Users/ysnows/Documents/Project/enconvo.nodejs/enconvo_api"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
